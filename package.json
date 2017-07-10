@@ -1,0 +1,50 @@
+{
+  "name": "webpack_build",
+  "version": "1.0.0",
+  "description": "build by webpack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "MY_APP=${app} webpack-dev-server",
+    "pro": "MY_APP=${app} NODE_ENV=production webpack"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "zhou",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.24.1",
+    "babel-helper-vue-jsx-merge-props": "^2.0.2",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.4.3",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.0",
+    "csso-loader": "^0.3.0",
+    "express": "^4.15.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "glob": "^7.1.1",
+    "html-webpack-plugin": "^2.28.0",
+    "http-proxy-middleware": "^0.17.4",
+    "imagemin-webpack-plugin": "^1.4.4",
+    "iview": "^2.0.0-rc.12",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "serve-index": "^1.8.0",
+    "style-loader": "^0.16.1",
+    "superagent": "^3.5.2",
+    "url-loader": "^0.5.8",
+    "vue": "^2.3.3",
+    "vue-loader": "^12.0.3",
+    "vue-router": "^2.5.3",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.0"
+  }
+}
