@@ -7,13 +7,13 @@ var config = {
         devtool:'cheap-module-eval-source-map', 
         watch:false,
         outputPath:path.join(__dirname,"../apps/"+projectName+"/dev"),
-        entryPath:path.join(__dirname,"../apps/"+projectName+"/_src/_script/main.js"),
+        entryPath:path.join(__dirname,"../apps/"+projectName+"/src/main.js"),
     },
     pro:{
         devtool:false,
         watch:false,
         outputPath:path.join(__dirname,"../apps/"+projectName+"/online"),
-        entryPath:path.join(__dirname,"../apps/"+projectName+"/_src/_script/main.js"),
+        entryPath:path.join(__dirname,"../apps/"+projectName+"/src/main.js"),
     }
 }
 

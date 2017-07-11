@@ -6,4 +6,6 @@ pageFiles.forEach(function(file,i){
 	var name = file.split('/').reverse()[0].replace('.js', '');
 	pageEntrys[name] = "./"+baseDir+project.name+'/_src/_script/entry/'+name+'.js';
 });
-config.entry = Object.assign({},config.entry,pageEntrys);
+
+module.exports = pageEntrys;
+// config.entry = Object.assign({},config.entry,pageEntrys);

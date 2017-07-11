@@ -1,0 +1,74 @@
+@import "~iview/src/styles/custom.less";
+@import "~iview/src/styles/mixins/index.less";
+@import "~iview/src/styles/common/iconfont/ionicons.less";
+@import "~iview/src/styles/common/layout.less";
+// @import "~iview/src/styles/animation/index.less";
+
+// 自定义主题
+
+@text-color : #333333;  //字体颜色
+@primary-color : #3d70fb;
+@selected-color         : #F5F6F7;
+@date-picker-cell-hover-bg    : fade(@primary-color, 20%);
+
+@border-color-base      : #DEE1E5;  // outside
+@border-color-split     : #DEE1E5;  // inside
+
+@btn-border-radius      : 2px;
+@border-radius-small    : 2px;
+@border-radius-base     : 2px;
+@btn-border-radius      : 2px;
+@btn-border-radius-small: 2px;
+
+@input-hover-border-color    : @border-color-base;
+@input-focus-border-color    : @border-color-base;
+@input-border-color          : @border-color-base;
+@input-placeholder-color     : #7b8497;
+// @input-color                 : #333333;
+
+// @table-thead-bg               : #a0a0a0;
+@table-td-hover-bg            : #ffffff;
+@table-td-stripe-bg       : #f9fafc;
+@table-thead-bg           : #f9fafc;
+
+.ivu-select-item-selected,.ivu-select-item-selected:hover,.ivu-select-item-selected:after{
+	color:@text-color !important;
+}
+
+// 引入组件样式
+
+@import "~iview/src/styles/components/button.less";
+
+@import "~iview/src/styles/components/alert.less";
+
+@import "~iview/src/styles/components/checkbox.less";
+
+@import "~iview/src/styles/components/radio.less";
+
+@import "~iview/src/styles/components/input-number.less";
+
+@import "~iview/src/styles/components/page.less";
+
+@import "~iview/src/styles/components/modal.less";
+
+@import "~iview/src/styles/components/select.less";
+
+@import "~iview/src/styles/components/tag.less";
+
+@import "~iview/src/styles/components/select-dropdown.less";
+
+@import "~iview/src/styles/components/input.less";
+
+@import "~iview/src/styles/components/transfer";
+
+@import "~iview/src/styles/components/table.less";
+
+@import "~iview/src/styles/components/dropdown.less";
+
+@import "~iview/src/styles/components/menu.less";
+
+@import "~iview/src/styles/components/date-picker.less";
+
+@import "~iview/src/styles/components/form.less";
+
+@import "~iview/src/styles/components/upload.less";
