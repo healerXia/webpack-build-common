@@ -18,8 +18,8 @@ var plugin = [
 
     //复制文件
     new CopyWebpackPlugin([
-        {from:"./apps/"+projectName+"/_src/_images",to:"images"},
-        {from:"./apps/"+projectName+"/_src/_fonts",to:"fonts"}
+        {from:"./apps/"+projectName+"/src/_images",to:"images"},
+        {from:"./apps/"+projectName+"/src/_fonts",to:"fonts"}
     ],{
         copyUnmodified: true,
     }),
