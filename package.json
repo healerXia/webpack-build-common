@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "MY_APP=${app} webpack-dev-server",
-    "pro": "MY_APP=${app} NODE_ENV=production webpack"
+    "build": "MY_APP=${app} NODE_ENV=production webpack"
   },
   "keywords": [
     "webpack"
