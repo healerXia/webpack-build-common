@@ -28,7 +28,7 @@
   - _images —— 存放图片（非必须）
   - _sass —— 存放样式文件（非必须，取决于引用路径）
   - _script —— 存放js、vue等文件
-    - main.js —— 入口文件，必须（在_script目录下）
+    - main.js —— 入口文件，必须
 - online —— 存放生产环境打包的代码
 - package.json —— 项目的配置文件
 
