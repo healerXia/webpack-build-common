@@ -4,7 +4,7 @@
   "description": "build by webpack",
   "main": "index.js",
   "scripts": {
-    "dev": "MY_APP=${app} webpack-dev-server",
+    "dev": "MY_APP=${app} PORT=${port} webpack-dev-server",
     "build": "MY_APP=${app} NODE_ENV=production webpack"
   },
   "keywords": [
@@ -24,6 +24,8 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
     "csso-loader": "^0.3.0",
+    "eslint": "^4.2.0",
+    "eslint-loader": "^1.9.0",
     "express": "^4.15.2",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
@@ -31,7 +33,7 @@
     "html-webpack-plugin": "^2.28.0",
     "http-proxy-middleware": "^0.17.4",
     "imagemin-webpack-plugin": "^1.4.4",
-    "iview": "^2.0.0-rc.12",
+    "iview": "^2.0.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "node-sass": "^4.5.2",

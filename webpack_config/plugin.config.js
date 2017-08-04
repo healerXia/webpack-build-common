@@ -17,12 +17,12 @@ var plugin = [
     }),
 
     //复制文件
-    new CopyWebpackPlugin([
-        {from:"./apps/"+projectName+"/src/_images",to:"images"},
-        {from:"./apps/"+projectName+"/src/_fonts",to:"fonts"}
-    ],{
-        copyUnmodified: true,
-    }),
+    // new CopyWebpackPlugin([
+    //     {from:"./apps/"+projectName+"/src/_images",to:"images"},
+    //     {from:"./apps/"+projectName+"/src/_fonts",to:"fonts"}
+    // ],{
+    //     copyUnmodified: true,
+    // }),
 
     //压缩图片
     new ImageminWebpackPlugin({

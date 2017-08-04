@@ -24,10 +24,10 @@
 #### apps目录结构
 
 - src —— 存放源文件
-  - _fonts —— 存放字体文件（非必须）
-  - _images —— 存放图片（非必须）
-  - _sass —— 存放样式文件（非必须，取决于引用路径）
-  - _script —— 存放js、vue等文件
+  - fonts —— 存放字体文件（非必须）
+  - images —— 存放图片（非必须）
+  - sass —— 存放样式文件（非必须，取决于引用路径）
+  - script —— 存放js、vue等文件
   - main.js —— 入口文件，必须
 - online —— 存放生产环境打包的代码
 - package.json —— 项目的配置文件
@@ -42,7 +42,7 @@
 
 ——开发——
 
-在本项目根目录执行`app=项目名 npm run dev`进入开发模式，例如apps目录下有名称为project的项目：`app=project npm run dev` ，在浏览器中访问localhost:port
+在本项目根目录执行`app=项目名 port=xxxx npm run dev`进入开发模式，port默认为3000端口（可不写），例如apps目录下有名称为project的项目：`app=project port=3001 npm run dev` ，在浏览器中访问localhost:port
 
 ——线上打包——
 

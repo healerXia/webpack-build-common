@@ -32,7 +32,7 @@ var loader = [
         options:{
             limit:10000,
             name:"images/[name].[ext]",
-            publicPath:'../'
+            // publicPath:'../'
         }
     },
     {   //字体文件处理
