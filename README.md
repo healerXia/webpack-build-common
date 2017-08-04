@@ -21,7 +21,7 @@
 - webpack.config.js ——webpack打包的配置文件
 
 
-#### apps目录结构
+#### apps中项目目录结构
 
 - src —— 存放源文件
   - fonts —— 存放字体文件（非必须）
@@ -34,16 +34,18 @@
 
 #### 配置
 
-将本项目克隆到本地，执行`npm install`安装依赖的模块
-
-安装全局webpack`npm install -g webpack@xxx`项目中用的是2.6.1版本
+1. 将本项目克隆到本地，执行`npm install`安装依赖的模块
+2. 安装全局webpack`npm install -g webpack@xxx`项目中用的是2.6.1版本
+3. 在webpack-build-common目录下新建apps目录
 
 #### 使用
 
 ——开发——
 
-在本项目根目录执行`app=项目名 port=xxxx npm run dev`进入开发模式，port默认为3000端口（可不写），例如apps目录下有名称为project的项目：`app=project port=3001 npm run dev` ，在浏览器中访问localhost:port
+1. 在apps目录下新建项目，项目结构如上
+2. 在本项目根目录执行`app=项目名 port=xxxx npm run dev`进入开发模式，port默认为3000端口（可不写）
+3. 例如apps目录下有名称为project的项目：`app=project port=3001 npm run dev` ，在浏览器中访问localhost:3001
 
 ——线上打包——
 
-执行`app=项目名 npm run build` 进行生产环境打包，打包代码存放在online目录中
+执行`app=项目名 npm run build` 进行生产环境打包，打包代码存放在项目中的online目录
