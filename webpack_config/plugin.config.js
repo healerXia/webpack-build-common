@@ -6,7 +6,11 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
+
 var projectName = process.env.MY_APP;
+
+var page = require("../apps/"+projectName+"/src/view.js");
 
 var plugin = [
     //提取相同js文件中相同的部分
@@ -33,7 +37,7 @@ var plugin = [
     }),
 
     //生成HTML页面
-    new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin(page?page:{
         title:'index page',
         hash:process.env.NODE_ENV==="production",
         chunks:['lib',"ui",'main'],
