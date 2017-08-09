@@ -1,6 +1,6 @@
 var path = require("path");
 
-var projectName = process.env.MY_APP;
+var {projectName,port,node_env} = require("./project.info.js");
 
 var config = {
     dev:{
@@ -18,7 +18,7 @@ var config = {
 }
 
 var exportConfig = config.dev;
-if(process.env.NODE_ENV==="production"){
+if(node_env==="production"){
     exportConfig = config.pro;
 }
 

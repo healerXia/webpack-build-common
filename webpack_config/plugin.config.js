@@ -6,16 +6,19 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+var {projectName,port,node_env} = require("./project.info.js");
 
+var page = require("../apps/"+projectName+"/src/view.js").page;
+var selected_libs = require("../apps/"+projectName+"/src/view.js").libs
 
-var projectName = process.env.MY_APP;
-
-var page = require("../apps/"+projectName+"/src/view.js");
+if(node_env==="production"){
+    page.hash = true;
+}
 
 var plugin = [
     //提取相同js文件中相同的部分
     new webpack.optimize.CommonsChunkPlugin({
-        name:["lib","ui"],
+        name:selected_libs,
         filename:"js/[name].bundle.js",
         minChunks: 3,
     }),
@@ -37,17 +40,10 @@ var plugin = [
     }),
 
     //生成HTML页面
-    new HtmlWebpackPlugin(page?page:{
-        title:'index page',
-        hash:process.env.NODE_ENV==="production",
-        chunks:['lib',"ui",'main'],
-        filename:'index.html',
-        template:'_tpl/tpl.html',
-        inject:'body'
-    })
+    new HtmlWebpackPlugin(page)
 ];
 
-if(process.env.NODE_ENV==="production"){
+if(node_env==="production"){
 	plugin.push(
         //混淆js
         new webpack.optimize.UglifyJsPlugin({

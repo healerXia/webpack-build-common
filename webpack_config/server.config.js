@@ -1,8 +1,8 @@
 var path = require("path");
 
-var projectName = process.env.MY_APP;
+var {projectName,port,node_env} = require("./project.info.js");
 
-var port = process.env.PORT?process.env.PORT:3000;
+port = port?port:3000;
 
 var devServer = {
     allowedHosts: [

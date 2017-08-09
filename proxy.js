@@ -7,7 +7,7 @@ const app = express();
 //环境变量读取配置
 const { PORT = '3000' } = process.env;
 
-//设置端口
+// //设置端口
 app.set('port', PORT);
 
 //设置静态资源路径

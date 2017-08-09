@@ -2,6 +2,8 @@ var path = require("path");
 
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+var {projectName,port,node_env} = require("./project.info.js");
+
 var loader = [
     {   
         //.vue文件编译
@@ -46,7 +48,7 @@ var loader = [
     },
 ];
 
-if(process.env.NODE_ENV==="production"){
+if(node_env==="production"){
 	loader.push({   //将scss,css编译导出到单独的文件
 		test:/\.(scss|css)$/,
 		loader:ExtractTextPlugin.extract({fallback:'style-loader',use:'css-loader!csso-loader!autoprefixer-loader?{browsers:["last 3 versions","> 5%"]}!sass-loader'}),
