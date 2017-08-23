@@ -9,7 +9,9 @@
     "dev-ssp": "set name=ssp-manager-fe&&set port=3000&&set node_env=develop&&webpack-dev-server",
     "build-ssp": "set name=ssp-manager-fe&&set port=3000&&set node_env=production&&webpack",
     "dev-demo": "set name=demo&&set port=3001&&set node_env=develop&&webpack-dev-server",
-    "build-demo": "set name=demo&&set port=3001&&set node_env=production&&webpack"
+    "build-demo": "set name=demo&&set port=3001&&set node_env=production&&webpack",
+    "dev-ai": "set name=ai&&set port=3002&&set node_env=develop&&webpack-dev-server",
+    "build-ai": "set name=ai&&set port=3002&&set node_env=production&&webpack"
   },
   "keywords": [
     "webpack"
@@ -46,10 +48,10 @@
     "style-loader": "^0.16.1",
     "superagent": "^3.5.2",
     "url-loader": "^0.5.8",
-    "vue": "^2.4.1",
-    "vue-loader": "^12.0.3",
-    "vue-router": "^2.5.3",
-    "vue-template-compiler": "^2.3.3",
+    "vue": "^2.4.2",
+    "vue-loader": "^12.2.2",
+    "vue-router": "^2.7.0",
+    "vue-template-compiler": "^2.4.2",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.6.1"
   }
