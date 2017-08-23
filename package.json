@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "name=${name} port=${port} node_env=develop webpack-dev-server",
-    "build": "name=${name} node_env=production webpack-dev-server",
+    "build": "name=${name} node_env=production webpack",
     "dev-ssp": "set name=ssp-manager-fe&&set port=3000&&set node_env=develop&&webpack-dev-server",
     "build-ssp": "set name=ssp-manager-fe&&set port=3000&&set node_env=production&&webpack",
     "dev-demo": "set name=demo&&set port=3001&&set node_env=develop&&webpack-dev-server",
