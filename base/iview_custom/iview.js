@@ -15,10 +15,14 @@ import Checkbox from "iview/src/components/checkbox";
 import Radio from "iview/src/components/Radio";
 import Form from "iview/src/components/form";
 
+import Circle from "iview/src/components/circle";
+
+import "./iview.less";
+
 var MenuItem = Menu.Item;
 var Submenu =Menu.Sub;
 var CheckboxGroup = Checkbox.Group;
 var RadioGroup = Radio.Group;
 var FormItem = Form.Item;
 
-export {Row,Col,Button,Input,Icon,Menu,Modal,Select,Option,Table,Page,DatePicker,MenuItem,Submenu,Upload,Checkbox,CheckboxGroup,Radio,RadioGroup,Form,FormItem}
+export {Row,Col,Button,Input,Icon,Menu,Modal,Select,Option,Table,Page,DatePicker,MenuItem,Submenu,Upload,Checkbox,CheckboxGroup,Radio,RadioGroup,Form,FormItem,Circle}

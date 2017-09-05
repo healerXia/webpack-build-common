@@ -16,7 +16,7 @@ var loader = [
         }
     },
     {   //babel，编译es6,jsx
-        test:/\.js?$/,
+        test:/\.(js?)$/,
         loader:'babel-loader',
         include: [
             path.resolve(__dirname, '../apps'),
