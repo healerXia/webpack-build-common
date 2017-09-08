@@ -14,15 +14,24 @@ var devServer = {
     contentBase: [path.join(__dirname, "../apps/"+projectName+"/dev")],
     hot:true,
     watchContentBase: true,
-    proxy: {
-        "/ssp-manager": {
-            target: "http://192.168.56.70:80",
+    proxy: [
+        {
+            context:["/ssp-manager"],
+            target:"http://192.168.56.70:80",
+            cookieDomainRewrite:{
+                "yiche.com": "yiche.com",
+            },
+            proxyTimeout:10000,
         },
-        cookieDomainRewrite:{
-            "yiche.com": "yiche.com",
-        },
-        proxyTimeout:10000,
-    }
+        {
+            context:["/oss-manager"],
+            target:"http://192.168.56.70:8099",
+            cookieDomainRewrite:{
+                "yiche.com": "yiche.com",
+            },
+            proxyTimeout:10000,
+        }
+    ]
 }
 
 module.exports = devServer;
